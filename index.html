@@ -72,63 +72,98 @@
     .tablas{
         margin: 30px;
         padding: 15px;
-        width: ;
         border: 2px solid silver;
         border-radius: 10px;
-        background-color: lightgrey;
+        background-color: rgba(0, 0, 0, 0.568);
         opacity: 50%;
         color: black;
     }
     #tabla1{
         margin-top: 15px;
     }
+    button.button-mid{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+    .images{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px dotted rgb(151, 151, 151);
+    }
+
     </style>
 </head>
 <body style="overflow-y:scroll;">
     <header>
         <nav id="top-nav">
-            <p id="marca"><strong>DISTRIBUIDORA</strong></p>
-            <p id="marca">Lomo Plateado</p>
-                    <button id="button-menu" onclick="alert('HOLA LUCIO - Menu aun no disponible')"><img src="/icons/menu-desplegable.png" alt="" style="width: 30%; "></button>
+            <h2 id="marca">DISTRIBUIDORA<h2>
+            <p id="marca"><strong>Lomo Plateado</strong> </p>
+                    <button id="button-menu" onclick="alert('LUCIO - Menu aun no disponible')"><img src="/icons/menu-desplegable.png" alt="" style="width: 30%; "></button>
                     <button id="button-inicio" onclick="location.href ='./index.html';" class="float-left submit-button">INICIO</button>
-                    <button id="nombre-usuario" onclick="alert('HOLA LUCIO - Perfil de usuario en preparacion')"><p>USUARIO: Invitado</p></button>
+                    <button id="nombre-usuario" onclick="alert('LUCIO - Perfil de usuario en preparacion')"><p>USUARIO: Invitado</p></button>
         </nav>
     </header>
     <div id="container">
         <div id="top-tablas">
             <div id="tabla1" class="tablas" title="TAREAS">
-                <table id="inside-table-1" class="inside-table">
-                    <th>TAREAS</th>
+                <table id="inside-table-1" class="inside-table" style="width: 250px;">
+                    <th >TAREAS</th>
                 </table>
             </div>
             <div id="tabla2" class="tablas" title="PRESUPUESTOS">
                 <table id="inside-table-1" class="inside-table">
-                    <th>PRESUPUESTOS</th>
+                    <th >PRESUPUESTOS</th>
                 </table>
             </div>
             <div id="tabla3" class="tablas" title="PLAZOS Y PAGOS">
                 <table id="inside-table-1" class="inside-table">
-                    <th>PLAZOS Y PAGOS</th>
+                    <th >PLAZOS Y PAGOS</th>
                 </table>
             </div>
             <div id="tabla4" class="tablas" title="OFERTAS">
                 <table id="inside-table-1" class="inside-table">
-                    <th>OFERTAS</th>
+                    <th >OFERTAS</th>
                 </table>
             </div>
         </div>
         <div id="accesos-mid" class="accesos">
             <div id="accesos-superior">
-                <div><button></button>VENTAS</div>
-                <div><button></button>RESULTADOS</div>
-                <div><button></button>PROVEEDORES</div>
-                <div><button></button>STOCK</div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-registradora" class="images" src="./icons/money-bag.gif" alt="Imagen de caja registradora"></button>
+                    <h4 id="tag-ventas" class="">VENTAS</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-resultados" class="images" src="./icons/target-resultado.gif" alt="Imagen de una diana"></button>
+                    <h4 id="tag-resultados">RESULTADOS</h4>
+                </div>
+                <div>
+                    <button id="button-3" class="button-mid"><img id="img-proveedores" class="images" src="./icons/proveedores-truck.gif" alt="Imagen de caja registradora"></button>
+                    <h4 id="tag-proveedores">PROVEEDORES</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-stock" class="images" src="./icons/stock.gif" alt="Imagen de un cuaderno y un lapiz"></button>
+                    <h4 id="tag-stock">STOCK</h4>
+                </div>
             </div>
             <div id="accesos-superior">
-                <div><button></button>NUEVO CLIENTE</div>
-                <div><button></button>GRAFICAS e IVA</div>
-                <div><button></button>SEGUIMIENTO de PERSONAL</div>
-                <div><button></button>VENCIMIENTOS MERCADERIA</div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-clientes" class="images" src="./icons/clientes.gif" alt="Imagen de clientes"></button>
+                    <h4 id="tag-nuevo-cliente">CLIENTES</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-graficas" class="images" src="./icons/line-chart.gif" alt="Imagen de grafica de resultados"></button>
+                    <h4>GRAFICAS e IVA</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-seguimiento-personal" class="images" src="./icons/seguimiento-de-personal2.gif" alt="Imagen de cuaderno con tildes"></button>
+                    <h4>SEGUIMIENTO de PERSONAL</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-vencimiento" class="images" src="./icons/calendar-vencimiento.gif" alt="Imagen de un calendario"></button>
+                    <h4>VENCIMIENTOS MERCADERIA</h4>
+                </div>
             </div>
         </div>
         <div class="circle" style="width: 250px;opacity: 20%; height: 250px; top: 10%; left: 20%; background-color: rgba(0, 0, 255, 0.6);"></div>
