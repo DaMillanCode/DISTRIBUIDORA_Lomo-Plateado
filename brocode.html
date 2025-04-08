@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BroCode</title>
+    <link rel="stylesheet" href="css/bro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="overflow-y:scroll;">
+
+    <header>
+        <nav id="top-nav">
+            <pre id="marca">E L   L O M O    P L A T E A D O  </pre>
+                    <button id="button-menu" onclick="alert(' - Menu aun no disponible')"><img src="icons/menu-desplegable.png" alt="" style="width: 30%; "></button>
+                    <button id="button-inicio" onclick="location.href ='./brocode.html';" class="submit-button">INICIO</button>
+                    <button id="nombre-usuario" onclick="alert(' - Perfil de usuario en preparacion')"><p>USUARIO: Invitado</p></button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="full-contenido">
+            <div class="titulo-nav">
+                <h1 id="titulo-cabecera">L I S T A  DE  P R E C I O S</h1>
+
+            </div><hr> <br> <br>
+            <div class="lista-articulos">
+                <h3>ARTICULOS</h3>
+                <pre id="lista-preformato">
+                    Gaseosa PEPSI 500cc             Fardo x 12u  500cc
+                    Gaseosa PEPSI 2Lts              Fardo x 8u   2Lts
+                    Gaseosa COCA-COLA 375cc         Fardo x 12u  375cc
+                    Gaseosa COCA-COLA 500cc         Fardo x u    500cc
+                    Energ. ROCKSTAR 500cc           Fardo x 6u   500cc
+                    Agua BIO BALANCE 500cc          Fardo x 6u   500cc
+                    Soda BIO BALANCE 2Lts           Fardo x 6u   2Lts
+                    Gaseo MARINARO Granadina 3Lts   Fardo x 4u   3Lts
+                    Gaseo MARINARO Limonada  3Lts   Fardo x 4u   3Lts
+                    Gaseo MARINARO Manzana   3Lts   Fardo x 4u   3Lts
+                    Gaseo MARINARO Naranja   3Lts   Fardo x 4u   3Lts
+                    Lata BRAHMA Chopp 473cc         Fardo x 24u  473cc
+                    Lata QUILMES 473cc              Fardo x 24u  473cc
+                    Porroncito QUILMES              Fardo x u    cc
+                    Vino PROMOCION 1.25Lts          Fardo x 6u   1.25Lts
+                    Cerveza QUILMES Cajon 1Lts      Cajon x 12u  1Lts
+                    Cerveza QUILMES 1890 Cajon 1Lts Cajon x 12u  1Lts
+                    Gaseosa MIRINDA Mza 2Lts        Fardo x u    2Lts
+                    Gaseosa SECCO Naranja   3Lts    Fardo x u    3Lts
+                    Gaseosa SECCO Limon Int 3Lts    Fardo x u    3Lts
+                    Gaseosa SECCO Manzana   3Lts    Fardo x u    3Lts
+                    Gaseosa SECCO LimaLimon 3Lts    Fardo x u    3Lts
+                </pre>
+            </div>
+            <div class="cantidad-seleccion">
+                <h3>SELECCIONAR CANTIDAD</h3>
+                <div id="precio-unidad">
+                    <div>
+                        <pre id="lista-preformato">
+    $  5.000
+    $ 11.200
+    $  9.800
+    $ 11.000
+    $  4.700
+    $  2.000
+    $  4.500
+    $  5.000
+    $  5.000
+    $  5.000
+    $  5.000
+    $ 23.000
+    $ 23.200
+    $ 22.500
+    $  9.000
+    $ 23.200
+    $ 23.000
+    $ 11.000
+    $  5.500
+    $  5.500
+    $  5.500
+    $  5.500
+                        </pre>
+                    </div>
+                    <div>
+                        <div>
+                            <ul style="border: 2px solid black; background-color: red;"  >
+                                <li style="background-color: rgb(90, 51, 51);">asd</li>
+                                <li>asd</li>
+                                <li>asd</li>
+                                <li>dasd</li>
+                                <li>asd</li>
+                            </ul>
+                        </div>
+                        <br><br><br>
+                        <div>
+                            <form>
+                                <input type="submit" id="buttom-agregar" value="AGREGAR">
+                                <input type="reset" id="buttom-reset" value="BORRAR TODO">
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="cantidades">
+
+                </div>
+            </div>
+            <div class="precios-total">
+                <h3>VALOR TOTAL POR ARTICULO</h3>
+            </div>
+            <div class="stock">
+                <h3>STOCK</h3>
+                <pre>
+                    
+                </pre>
+            </div>
+        </div>
+
+        <div class="circle" style="width: 250px;opacity: 20%; height: 250px; top: 10%; left: 20%; background-color: rgba(0, 0, 255, 0.6);"></div>
+        <div class="circle" style="width: 170px;opacity: 20%; height: 170px; top: 30%; left: 40%; background-color: rgba(70, 130, 180, 0.7);"></div>
+        <div class="circle" style="width: 320px;opacity: 20%; height: 320px; top: 50%; left: 60%; background-color: rgba(0, 0, 139, 0.5);"></div>
+        <div class="circle" style="width: 500px;opacity: 20%; height: 500px; top: 50%; left: 15%; background-color: rgba(105, 105, 105, 0.8);"></div>
+        <div class="circle" style="width: 140px;opacity: 20%; height: 140px; top: 40%; left: 70%; background-color: rgba(0, 174, 255, 0.459);"></div>
+        <div class="circle" style="width: 1000px;opacity: 20%; height: 1000px; top: 80%; left: 50%; background-color: rgba(169, 169, 169, 0.9);"></div>
+
+    </div>
+</body>
+</html>

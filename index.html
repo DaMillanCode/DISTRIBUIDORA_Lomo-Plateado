@@ -4,100 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DISTRI Lomo Plateado</title>
-    <style>
-    *{
-        margin: 0;
-        padding: 0;
-        color: silver;
-        box-sizing: border-box;
-    }
-    body {
-        height: 100vh;
-        background-color: #141b22;
-        position: relative;
-        overflow: hidden; /* Evita que los círculos se desborden */
-    }
-    .circle {
-        position: absolute;
-        border-radius: 50%;
-        z-index: 1; /* Asegura que los círculos se apilen uno sobre otro */
-        box-shadow: 0 0 1em silver;
-    }
-    nav{
-        background-color:rgb(13, 27, 72);
-        border: 2px solid black;
-        border-radius: 50px 250px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    button{
-        border-width: 2px;
-        border-color: #141b22;
-        border-radius: 50px;
-        height: 75px;
-        width: 75px;
-        font-size: 18px;
-        font-family: monospace;
-        background-color: rgb(13, 27, 72);
-    }
-    #marca{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #button-menu{
-        border-radius: 50px 0px 0px 50px;
-    }
-    #button-inicio{
-        border-radius: 0px 50px 50px 0px;
-        margin-right: 3em;
-        width: 120px;
-    }
-    #nombre-usuario{
-        margin-left: 3em;
-        width: 250px;
-    }
-    #container{
-        display: grid;
-        margin: auto;
-        font-size: 25px;
-        text-align: center;
-        width: 90%;
-        max-width: 1200px;
-    }
-    .tablas{
-        margin: 30px;
-        padding: 15px;
-        border: 2px solid silver;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.568);
-        opacity: 50%;
-        color: black;
-    }
-    #tabla1{
-        margin-top: 15px;
-    }
-    button.button-mid{
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-    }
-    .images{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 2px dotted rgb(151, 151, 151);
-    }
-
-    </style>
+    <link rel="stylesheet" href="css/style_1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body style="overflow-y:scroll;">
     <header>
         <nav id="top-nav">
+
+            <pre id="marca">E L   L O M O    P L A T E A D O  </pre>
+            <button class="botones" id="button-menu" onclick="alert('LUCIO - Menu aun no disponible')"><img src="/icons/menu-desplegable.png" alt="" style="width: 30%; "></button>
+            <button class="botones" id="button-inicio" onclick="location.href ='./index.html';">INICIO</button>
+            <button class="botones" id="nombre-usuario" onclick="alert('LUCIO - Perfil de usuario en preparacion')"><p>USUARIO: Invitado</p></button>
+        </nav>
+    </header>
+    <div id="container"> 
+        <div id="top-tablas">
+            <div id="tabla1" class="tablas" title="TAREAS">
+                <table id="inside-table-1" class="inside-table">
+                    <th class="table-head">TAREAS DIARIAS PERSONAL</th>
+                </table>
+                <ul class="table-list-renglon"><br>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+
+                </ul>
+            </div>
+            <div id="tabla2" class="tablas" title="PRESUPUESTOS">
+                <table id="inside-table-1" class="inside-table">
+                    <th class="table-head">PRESUPUESTOS A APROBAR</th>
+                </table>
+                <ul class="table-list-renglon"><br>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+
+                </ul>
+            </div>
+            <div id="tabla3" class="tablas" title="PLAZOS Y PAGOS">
+                <table id="inside-table-1" class="inside-table">
+                    
+                    <th class="table-head">PLAZOS Y PAGOS A VENCER</th>
+                </table>
+                <ul class="table-list-renglon"><br>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+
+                </ul>
+            </div>
+            <div id="tabla4" class="tablas" title="OFERTAS">
+                <table id="inside-table-1" class="inside-table">
+                    <th class="table-head">OFERTAS TEMPORADA</th>
+                </table>
+                <ul class="table-list-renglon"><br>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+
+                </ul>
             <h2 id="marca">DISTRIBUIDORA<h2>
             <p id="marca"><strong>Lomo Plateado</strong> </p>
                     <button id="button-menu" onclick="alert('LUCIO - Menu aun no disponible')"><img src="/icons/menu-desplegable.png" alt="" style="width: 30%; "></button>
@@ -132,6 +107,20 @@
             <div id="accesos-superior">
                 <div>
                     <button id="button-1" class="button-mid"><img id="img-registradora" class="images" src="./icons/money-bag.gif" alt="Imagen de caja registradora"></button>
+                    <h4 id="tag-ventas" class="tag-mid">VENTAS</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-resultados" class="images" src="./icons/target-resultado.gif" alt="Imagen de una diana"></button>
+                    <h4 id="tag-resultados" class="tag-mid">RESULTADOS</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-proveedores" class="images" src="./icons/proveedores-truck.gif" alt="Imagen de caja registradora"></button>
+                    <h4 id="tag-proveedores" class="tag-mid">PROVEEDORES</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-stock" class="images" src="./icons/stock.gif" alt="Imagen de un cuaderno y un lapiz"></button>
+                    <h4 id="tag-stock" class="tag-mid">STOCK</h4>
+
                     <h4 id="tag-ventas" class="">VENTAS</h4>
                 </div>
                 <div>
@@ -145,11 +134,78 @@
                 <div>
                     <button id="button-1" class="button-mid"><img id="img-stock" class="images" src="./icons/stock.gif" alt="Imagen de un cuaderno y un lapiz"></button>
                     <h4 id="tag-stock">STOCK</h4>
+
                 </div>
             </div>
             <div id="accesos-superior">
                 <div>
                     <button id="button-1" class="button-mid"><img id="img-clientes" class="images" src="./icons/clientes.gif" alt="Imagen de clientes"></button>
+                    <h4 id="tag-nuevo-cliente" class="tag-mid">CLIENTES</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-graficas" class="images" src="./icons/line-chart.gif" alt="Imagen de grafica de resultados"></button>
+                    <h4 id="tag-graficas" class="tag-mid">GRAFICAS e IVA</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-seguimiento-personal" class="images" src="./icons/seguimiento-de-personal2.gif" alt="Imagen de cuaderno con tildes"></button>
+                    <h4 id="tag-seguimiento-personal" class="tag-mid">SEGUIMIENTO de PERSONAL</h4>
+                </div>
+                <div>
+                    <button id="button-1" class="button-mid"><img id="img-vencimiento" class="images" src="./icons/calendar-vencimiento.gif" alt="Imagen de un calendario"></button>
+                    <h4 id="tag-vencimientos" class="tag-mid">VENCIMIENTOS MERCADERIA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="background-circulos">
+            <div class="circle" style="width: 250px;opacity: 20%; height: 250px; top: 20%; left: 20%; background-color: rgba(0, 0, 255, 0.6);"></div>
+            <div class="circle" style="width: 140px;opacity: 20%; height: 140px; top: 40%; left: 70%; background-color: rgba(0, 174, 255, 0.459);"></div>
+            <div class="circle" style="width: 320px;opacity: 20%; height: 320px; top: 50%; left: 60%; background-color: rgba(0, 0, 139, 0.5);"></div>
+            <div class="circle" style="width: 500px;opacity: 20%; height: 500px; top: 70%; left: 15%; background-color: rgba(105, 105, 105, 0.8);"></div>
+            <div class="circle" style="width: 170px;opacity: 20%; height: 170px; top: 70%; left: 40%; background-color: rgba(70, 130, 180, 0.7);"></div>
+            <div class="circle" style="width: 1000px;opacity: 20%; height: 1000px; top: 80%; left: 50%; background-color: rgba(169, 169, 169, 0.9);"></div>
+            <div class="circle" style="width: 140px;opacity: 20%; height: 140px; top: 140%; left: 25%; background-color: rgba(0, 174, 255, 0.459);"></div>
+            <div class="circle" style="width: 420px;opacity: 20%; height: 420px; top: 180%; left: 50%; background-color: rgb(139, 28, 0);"></div>
+            <div class="circle" style="width: 420px;opacity: 20%; height: 420px; top: 395%; left: 5%; background-color: rgb(139, 28, 0);"></div>
+ 
+        </div>
+        <div id="fotter-tablas">
+            <div id="tabla5" class="tablas" title="TOP CLIENTES COMPRAS">
+                <table id="inside-table-1" class="inside-table">
+                    <th class="table-head">TOP CLIENTES COMPRAS</th>
+                </table>
+                <ul class="table-list-renglon"><br>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+
+                </ul>
+            </div>
+            <div id="tabla6" class="tablas" title="PRESUPUESTOS">
+                <table id="inside-table-1" class="inside-table">
+                    <th class="table-head">TOP PRODUCTOS VENTAS</th>
+                </table>
+                <ul class="table-list-renglon"><br>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+
+                </ul>
+            </div>
+            <div id="tabla7" class="tablas" title="PLAZOS Y PAGOS">
+                <table id="inside-table-1" class="inside-table">
+                    <th class="table-head">PRODUCTOS STOCK MINIMO</th>
+                </table>
+                <ul class="table-list-renglon"><br>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                    <li class="item-lista-tabla"></li>
+                </ul>
                     <h4 id="tag-nuevo-cliente">CLIENTES</h4>
                 </div>
                 <div>
