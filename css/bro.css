@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: silver;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #141b22;
+    position: relative;
+    overflow: hidden; /* Evita que los círculos se desborden */
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1; /* Asegura que los círculos se apilen uno sobre otro */
+    box-shadow: 0 0 1em silver;
+}
+.full-contenido{
+    padding-top: 150px;
+}
+li{
+    border: 1px solid black;
+    padding-bottom: 2px;
+}
+h3{
+    padding: 15px 10px;
+}
+#lista-preformato{
+    display: inline-block;
+    padding: 20px;
+}
+#marca{
+    font-family: Alfa Slab One;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-shadow: 1px 1px 25px aqua;
+}
+nav{
+    background-color:rgb(13, 27, 72);
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 50px 250px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Alfa Slab One;
+    text-shadow: 1px 1px 25px aqua;
+}
+nav > h1{
+    padding: 25px;
+}
+button{
+    border-width: 2px;
+    border-color: #172516;
+    height: 75px;
+    width: 75px;
+    font-size: 18px;
+    font-family: monospace;
+    background-color: rgb(13, 27, 72);
+}
+#lista-preformato{
+    border: 1px solid silver;
+}
+#button-menu{
+    border-radius: 50px 0px 0px 50px;
+    padding: 15px;
+}
+#button-inicio{
+    border-radius: 0px 50px 50px 0px;
+    margin-right: 3em;
+    width: auto;
+    padding: 15px;
+}
+#nombre-usuario{
+    border-radius: 50px;
+    margin-left: 3em;
+    width: auto;
+    padding: 15px;
+}
